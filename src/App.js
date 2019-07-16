@@ -23,7 +23,6 @@ const App = props => {
       ]
     });
   }
-
   return (
     <div className="items">
       <button onClick={switchNameHandler}>Switch Names</button>
