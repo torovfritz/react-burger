@@ -28,6 +28,10 @@ class App extends Component {
     });
   }
 
+  togglePersonsHandler() {
+    console.log('hey!');
+  }
+
   render() {
     const style = {
       backgroundColor: 'white',
@@ -41,7 +45,7 @@ class App extends Component {
       <div className="items">
         <button
           style={style}
-          onClick={() => this.switchNameHandler('Huy')}>Switch Names</button>
+          onClick={this.togglePersonsHandler}>Switch Names</button>
         <Person
           name={this.state.persons[0].name}
           age={this.state.persons[0].age}
